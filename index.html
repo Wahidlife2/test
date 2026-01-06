@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Clones Portal | Premium Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #6366f1;
+      --secondary: #a855f7;
+      --bg: #0f172a;
+      --card-bg: rgba(30, 41, 59, 0.7);
+      --text: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      background-image:
+        radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(168, 85, 247, 0.15) 0px, transparent 50%);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      z-index: 10;
+      padding: 20px;
+      max-width: 800px;
+    }
+
+    h1 {
+      font-size: 4rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      background: linear-gradient(to right, #6366f1, #a855f7);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -1px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #94a3b8;
+      margin-bottom: 3rem;
+      line-height: 1.6;
+    }
+
+    .portal-ui {
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      padding: 3rem;
+      border-radius: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .select-label {
+      display: block;
+      text-align: left;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #a855f7;
+      margin-bottom: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .custom-select-wrapper {
+      position: relative;
+      width: 100%;
+    }
+
+    select {
+      width: 100%;
+      padding: 1.2rem;
+      background: rgba(15, 23, 42, 0.6);
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      color: white;
+      font-size: 1.1rem;
+      appearance: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    select:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.2);
+    }
+
+    .arrow {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+      color: #94a3b8;
+    }
+
+    .btn-launch {
+      width: 100%;
+      margin-top: 2rem;
+      padding: 1.2rem;
+      background: linear-gradient(to right, #6366f1, #a855f7);
+      border: none;
+      border-radius: 12px;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.4);
+    }
+
+    .btn-launch:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 20px 25px -5px rgba(99, 102, 241, 0.5);
+      filter: brightness(1.1);
+    }
+
+    .btn-launch:active {
+      transform: translateY(0);
+    }
+
+    /* Animated Blobs */
+    .blob {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      background: var(--primary);
+      filter: blur(80px);
+      opacity: 0.2;
+      border-radius: 50%;
+      z-index: -1;
+      animation: move 20s infinite alternate;
+    }
+
+    .blob-2 {
+      background: var(--secondary);
+      right: -100px;
+      bottom: -100px;
+      animation-delay: -5s;
+    }
+
+    @keyframes move {
+      from {
+        transform: translate(-10%, -10%) scale(1);
+      }
+
+      to {
+        transform: translate(10%, 10%) scale(1.1);
+      }
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 12px;
+      background: rgba(99, 102, 241, 0.1);
+      border: 1px solid rgba(99, 102, 241, 0.2);
+      border-radius: 100px;
+      color: var(--primary);
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="blob"></div>
+  <div class="blob blob-2"></div>
+
+  <div class="container">
+    <span class="badge">ECOMMERCE HUB V1.0</span>
+    <h1>E-Commerce Projects</h1>
+    <p>Sélectionnez l'un des clones e-commerce ci-dessous pour accéder à l'interface de démonstration locale.</p>
+
+    <div class="portal-ui">
+      <span class="select-label">Choisir un Clone</span>
+      <div class="custom-select-wrapper">
+        <select id="cloneSelect">
+          <option value="" disabled selected>-- Choisir un projet --</option>
+          <option value="/KIABI/index.html">KIABI</option>
+          <option value="/CDISCOUNT/index.html">CDISCOUNT</option>
+          <option value="/BOULANGER/index.html">BOULANGER</option>
+          <option value="/LA_HALLE/index.html">LA HALLE</option>
+          <option value="other">Prochainement...</option>
+        </select>
+        <div class="arrow">▼</div>
+      </div>
+
+      <button class="btn-launch" onclick="launchProject()">LANCER LE PROJET</button>
+    </div>
+  </div>
+
+  <script>
+    function launchProject() {
+      const select = document.getElementById('cloneSelect');
+      const url = select.value;
+
+      if (url && url !== 'other') {
+        window.location.href = url;
+      } else if (url === 'other') {
+        alert("D'autres clones arrivent bientôt !");
+      } else {
+        alert("Veuillez sélectionner un projet.");
+      }
+    }
+  </script>
+  <script src="http://localhost:3000/sdk.js" data-id="3fad39ae-089b-43c3-8714-b76a3a22c7e1"></script>
+</body>
+
+</html>

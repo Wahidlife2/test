@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --bl-orange: #F05123;
+    --bl-blue: #003366;
+    --bl-text: #333;
+    --bl-gray: #757575;
+    --bl-light-bg: #F8F8F8;
+    --bl-border: #E0E0E0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bl-light-bg);
+    color: var(--bl-text);
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+.text-xs {
+    font-size: 0.75rem;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.text-white {
+    color: white;
+}
+
+.py-15 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+    padding: 20px 0;
+}
+
+/* Navbar Styles */
+.bl-header {
+    background: white;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.bl-top-bar {
+    background: var(--bl-blue);
+    padding: 5px 0;
+}
+
+.bl-main-nav {
+    padding: 10px 0;
+}
+
+.bl-logo {
+    display: flex;
+    align-items: baseline;
+    text-decoration: none;
+}
+
+.logo-b {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--bl-orange);
+}
+
+.logo-oulanger {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--bl-blue);
+}
+
+.menu-btn {
+    background: #f5f5f5;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    color: var(--bl-blue);
+    cursor: pointer;
+}
+
+.search-bar {
+    background: #f5f5f5;
+    border-radius: 30px;
+    overflow: hidden;
+    height: 44px;
+    margin: 0 20px;
+}
+
+.search-bar input {
+    border: none;
+    background: transparent;
+    padding: 0 20px;
+    flex: 1;
+    outline: none;
+}
+
+.search-btn {
+    background: var(--bl-orange);
+    border: none;
+    color: white;
+    width: 60px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.nav-actions .action-item {
+    cursor: pointer;
+    color: var(--bl-blue);
+}
+
+/* Home Styles */
+.hero-banner {
+    background: var(--bl-orange);
+    border-radius: 15px;
+    padding: 60px;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.btn-white {
+    background: white;
+    color: var(--bl-orange);
+    border: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.services-bar {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    border: 1px solid #eee;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    color: var(--bl-blue);
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.bl-product-card {
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    overflow: hidden;
+    transition: transform 0.2s;
+    display: block;
+    color: inherit;
+}
+
+.bl-product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.card-image {
+    height: 200px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-image img {
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.brand {
+    color: var(--bl-gray);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--bl-text);
+    height: 3em;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--bl-orange);
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: var(--bl-gray);
+    font-size: 0.9rem;
+}
+
+.add-btn {
+    width: 100%;
+    background: var(--bl-blue);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+/* Hub Switcher */
+.hub-select {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--bl-blue);
+    cursor: pointer;
+}

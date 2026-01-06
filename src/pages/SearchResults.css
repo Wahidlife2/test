@@ -1,0 +1,17 @@
+.search-results-page {
+    padding-top: 40px;
+    padding-bottom: 80px;
+    min-height: 60vh;
+}
+
+.search-title {
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.no-results {
+    text-align: center;
+    padding: 60px;
+    color: var(--mi-dark-gray);
+    font-size: 18px;
+}
