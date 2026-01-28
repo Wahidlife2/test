@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import { Mail, Phone, MessageSquare, Facebook, Twitter, Instagram } from 'lucide-react';
 
 const Footer = () => {
@@ -52,8 +52,8 @@ const Footer = () => {
                     </div>
                     <div className="footer-col">
                         <h3>Besoin d'aide ?</h3>
-                        <ul>
-                            <li>Suivre ma commande</li>
+                        <ul style={{ listStyle: 'none' }}>
+                            <li><Link to="/my-orders" style={{ textDecoration: 'none', color: 'inherit' }}>Suivre ma commande</Link></li>
                             <li>Modifier mon adresse</li>
                             <li>Déclarer un incident</li>
                             <li>Nous contacter</li>

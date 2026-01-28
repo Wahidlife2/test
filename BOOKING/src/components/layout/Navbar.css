@@ -1,0 +1,89 @@
+.navbar {
+    background-color: var(--booking-blue);
+    color: white;
+    width: 100%;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-item {
+    background: transparent;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.circle-btn {
+    border: 1px solid white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-btn {
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: opacity 0.2s;
+}
+
+.nav-btn.outline {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.nav-btn.bg-white {
+    background-color: white;
+    color: var(--booking-light-blue);
+}
+
+.sub-navbar {
+    margin-top: 10px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+    padding-bottom: 12px;
+}
+
+.nav-links li {
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-links li.active {
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-links li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}

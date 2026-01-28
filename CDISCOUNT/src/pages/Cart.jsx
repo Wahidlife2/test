@@ -73,7 +73,7 @@ const Cart = () => {
                             <span className="total-price">{cartTotal.toFixed(2)}€</span>
                         </div>
 
-                        <button className="checkout-btn mt-30">COMMANDER</button>
+                        <Link to="/checkout" className="checkout-btn mt-30 text-center flex justify-center">COMMANDER</Link>
                         <p className="text-xs text-gray text-center mt-15">Paiement 100% sécurisé</p>
                     </div>
 

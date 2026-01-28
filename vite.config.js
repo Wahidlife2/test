@@ -14,6 +14,7 @@ export default defineConfig({
         cdiscount: resolve(__dirname, 'CDISCOUNT/index.html'),
         boulanger: resolve(__dirname, 'BOULANGER/index.html'),
         lahalle: resolve(__dirname, 'LA_HALLE/index.html'),
+        booking: resolve(__dirname, 'BOOKING/index.html'),
       },
     },
   },

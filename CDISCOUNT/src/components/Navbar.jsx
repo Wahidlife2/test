@@ -88,11 +88,16 @@ const Navbar = () => {
                     </form>
 
                     <div className="nav-actions flex align-center gap-20">
-                        <div className="action-item flex align-center gap-5">
+                        <div className="action-item flex align-center gap-5 relative group">
                             <User size={24} color="white" />
                             <div className="action-text hide-tablet">
                                 <span className="text-xs text-white block">Me connecter</span>
                                 <span className="text-sm text-white font-bold block">Compte <ChevronDown size={14} /></span>
+                            </div>
+                            <div className="dropdown-menu account-dropdown" style={{ right: 0, left: 'auto' }}>
+                                <Link to="/my-orders" className="dropdown-item">Mes commandes</Link>
+                                <Link to="#" className="dropdown-item">Mes favoris</Link>
+                                <Link to="#" className="dropdown-item">Déconnexion</Link>
                             </div>
                         </div>
                         <div className="action-item flex align-center gap-5">

@@ -1,0 +1,192 @@
+.hotel-detail {
+    padding-top: 20px;
+}
+
+.breadcrumbs {
+    font-size: 14px;
+    color: var(--booking-light-blue);
+    margin-bottom: 20px;
+}
+
+.hotel-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.hotel-type {
+    font-size: 12px;
+    background-color: #feba02;
+    color: white;
+    padding: 2px 4px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.stars {
+    color: #feba02;
+}
+
+.hotel-header h1 {
+    font-size: 24px;
+    margin: 4px 0;
+}
+
+.hotel-address {
+    font-size: 14px;
+    color: var(--booking-gray);
+}
+
+.hotel-address .link {
+    color: var(--booking-light-blue);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.hotel-gallery {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 8px;
+    height: 450px;
+    margin-bottom: 30px;
+}
+
+.gallery-main {
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.gallery-thumb {
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+}
+
+.gallery-thumb.more {
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: var(--booking-light-blue);
+}
+
+.hotel-content {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.hotel-description {
+    flex: 2;
+}
+
+.hotel-info-sidebar {
+    flex: 1;
+}
+
+.sidebar-box {
+    background-color: var(--booking-light-yellow);
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.sidebar-box h4 {
+    margin-bottom: 10px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.amenities {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.amenity-item {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.availability-section h2 {
+    margin-bottom: 20px;
+}
+
+.room-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--booking-border);
+}
+
+.room-table th {
+    background-color: var(--booking-light-blue);
+    color: white;
+    text-align: left;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.room-table td {
+    border: 1px solid var(--booking-border);
+    padding: 15px;
+    vertical-align: top;
+}
+
+.room-name {
+    color: var(--booking-light-blue);
+    font-weight: 700;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+.room-desc {
+    font-size: 12px;
+    color: var(--booking-gray);
+}
+
+.room-price {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.price-info {
+    font-size: 12px;
+    color: var(--booking-gray);
+}
+
+.room-options {
+    font-size: 12px;
+    color: var(--booking-green);
+    font-weight: 700;
+}
+
+.room-select {
+    padding: 8px;
+    width: 100%;
+    border-color: var(--booking-border);
+}
+
+.reserve-column {
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.reserve-perks {
+    list-style: none;
+    font-size: 11px;
+    color: var(--booking-gray);
+    margin-top: 10px;
+    padding: 0;
+}

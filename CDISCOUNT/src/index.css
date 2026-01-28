@@ -1373,3 +1373,39 @@ button {
   background: #001f4d;
   color: white;
 }
+/* Checkout & Success Styles */
+.checkout-page { max-width: 1200px; }
+.checkout-steps { display: flex; align-items: center; position: relative; }
+.step-item { display: flex; flex-direction: column; align-items: center; gap: 10px; opacity: 0.4; transition: 0.3s; }
+.step-item.active { opacity: 1; }
+.step-num { width: 36px; height: 36px; background: #eee; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; }
+.step-item.active .step-num { background: var(--cd-yellow); color: var(--cd-blue); }
+.step-divider { flex: 1; height: 2px; background: #eee; max-width: 100px; margin-top: 18px; }
+.checkout-grid { display: grid; grid-template-columns: 1fr 380px; gap: 40px; }
+.checkout-box { background: white; padding: 40px; border-radius: 8px; border: 1px solid #eee; box-shadow: 0 10px 30px rgba(0,0,0,0.02); }
+.form-group label { display: block; font-size: 0.85rem; font-weight: 700; color: #555; margin-bottom: 8px; }
+.form-group input { width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 4px; outline: none; transition: 0.2s; }
+.form-group input:focus { border-color: var(--cd-blue); }
+.pay-opt { flex: 1; padding: 15px; border: 2px solid #eee; text-align: center; border-radius: 8px; font-weight: 700; cursor: pointer; font-size: 0.8rem; }
+.pay-opt.active { border-color: var(--cd-blue); background: #f0f4f8; }
+.input-with-icon { position: relative; }
+.input-icon { position: absolute; left: 12px; top: 13px; color: #999; }
+.input-with-icon input { padding-left: 40px; }
+.summary-items-list { max-height: 250px; overflow-y: auto; }
+.mini-img { width: 50px; height: 50px; object-fit: contain; background: white; border: 1px solid #eee; border-radius: 4px; }
+.w-full { width: 100%; }
+.text-lg { font-size: 1.1rem; }
+.text-xl { font-size: 1.5rem; }
+.text-danger { color: var(--cd-danger); }
+.border-top { border-top: 1px solid #eee; }
+.line-clamp-1 { display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
+.animated { animation: fadeIn 0.4s ease-out; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+/* Account Dropdown */
+.relative { position: relative; }
+.account-dropdown { display: none !important; }
+.group:hover .account-dropdown { display: flex !important; }
+.account-dropdown .dropdown-item { padding: 15px 25px; min-width: 200px; }
+.scrollbar-none::-webkit-scrollbar { display: none; }
+.scrollbar-none { -ms-overflow-style: none; scrollbar-width: none; }

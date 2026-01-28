@@ -1,0 +1,72 @@
+:root {
+    --booking-blue: #003580;
+    --booking-light-blue: #0071c2;
+    --booking-yellow: #ffb700;
+    --booking-light-yellow: #fff0e0;
+    --booking-text: #1a1a1a;
+    --booking-gray: #4b4b4b;
+    --booking-light-gray: #e7e7e7;
+    --booking-white: #ffffff;
+    --booking-green: #008009;
+    --booking-border: #dcdcdc;
+    --booking-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --font-family: 'Roboto', 'BlinkMacSystemFont', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--booking-text);
+    background-color: var(--booking-white);
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: var(--booking-light-blue);
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Common booking button style */
+.btn-primary {
+    background-color: var(--booking-light-blue);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #005999;
+}
+
+.btn-accent {
+    background-color: var(--booking-yellow);
+    color: var(--booking-blue);
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+}
