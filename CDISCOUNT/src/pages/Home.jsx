@@ -42,10 +42,19 @@ const Home = () => {
                 <section className="categories-grid mb-60">
                     <h2 className="section-title">Nos Univers</h2>
                     <div className="cats-flex">
-                        {categories.map(cat => (
-                            <Link to={`/search?q=${encodeURIComponent(cat)}`} key={cat} className="cat-card">
-                                <div className="cat-image"></div>
-                                <span>{cat}</span>
+                        {[
+                            { name: "Informatique", image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=200&auto=format&fit=crop" },
+                            { name: "Electroménager", image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=200&auto=format&fit=crop" },
+                            { name: "Maison", image: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=200&auto=format&fit=crop" },
+                            { name: "TV Son", image: "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?q=80&w=200&auto=format&fit=crop" },
+                            { name: "Jardin", image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?q=80&w=200&auto=format&fit=crop" },
+                            { name: "Brico", image: "https://images.unsplash.com/photo-1581141849291-1125c7b692b5?q=80&w=200&auto=format&fit=crop" }
+                        ].map(cat => (
+                            <Link to={`/search?q=${encodeURIComponent(cat.name)}`} key={cat.name} className="cat-card">
+                                <div className="cat-image">
+                                    <img src={cat.image} alt={cat.name} />
+                                </div>
+                                <span>{cat.name}</span>
                             </Link>
                         ))}
                     </div>

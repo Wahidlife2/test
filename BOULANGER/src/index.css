@@ -307,3 +307,199 @@ a {
     color: var(--bl-blue);
     cursor: pointer;
 }
+
+/* Product Detail Page */
+.breadcrumb {
+    font-size: 0.8rem;
+    color: var(--bl-gray);
+}
+
+.product-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.main-image {
+    background: white;
+    border-radius: 12px;
+    padding: 40px;
+    border: 1px solid #eee;
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.brand-name {
+    color: var(--bl-gray);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.product-title {
+    font-size: 2.2rem;
+    color: var(--bl-blue);
+    font-weight: 800;
+    margin: 10px 0;
+}
+
+.current-price {
+    font-size: 2.5rem;
+    color: var(--bl-orange);
+    font-weight: 800;
+}
+
+.btn-orange {
+    background: var(--bl-orange);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-bottom: 3px solid #c0392b;
+}
+
+.service-pill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--bl-blue);
+    margin-bottom: 10px;
+}
+
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.specs-table tr {
+    border-bottom: 1px solid #eee;
+}
+
+.specs-table td {
+    padding: 12px;
+    font-size: 0.95rem;
+}
+
+/* Cart Page */
+.cart-layout {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: 100px 1fr 150px;
+    gap: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+.item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.qty-control button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cart-summary {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    height: fit-content;
+    position: sticky;
+    top: 120px;
+}
+
+.total-amount {
+    font-size: 1.8rem;
+    color: var(--bl-orange);
+    font-weight: 900;
+}
+
+/* Global Utilities */
+.full-width {
+    width: 100%;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.border {
+    border: 1px solid #ddd;
+}
+
+.rounded {
+    border-radius: 8px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.border-top {
+    border-top: 1px solid #eee;
+}
+
+.pt-20 {
+    padding-top: 20px;
+}
+
+.mt-5 {
+    margin-top: 5px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+
+    .product-main,
+    .cart-layout,
+    .checkout-layout {
+        grid-template-columns: 1fr;
+    }
+}

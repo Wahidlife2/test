@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Search, ShoppingCart, User, Menu } from 'lucide-react';
+import { useCart } from '../context/CartContext';
 
 const Navbar = () => {
+    const { cartCount } = useCart();
+
     return (
         <header className="bl-header">
             <div className="bl-top-bar">
@@ -46,10 +49,23 @@ const Navbar = () => {
                             <User size={24} />
                             <span className="text-xs">Mon compte</span>
                         </div>
-                        <div className="action-item flex flex-col align-center">
+                        <Link to="/cart" className="action-item flex flex-col align-center" style={{ position: 'relative' }}>
                             <ShoppingCart size={24} />
                             <span className="text-xs">Mon panier</span>
-                        </div>
+                            {cartCount > 0 && (
+                                <span style={{
+                                    position: 'absolute',
+                                    top: '-5px',
+                                    right: '5px',
+                                    background: 'var(--bl-orange)',
+                                    color: 'white',
+                                    fontSize: '0.7rem',
+                                    fontWeight: 'bold',
+                                    padding: '2px 6px',
+                                    borderRadius: '10px'
+                                }}>{cartCount}</span>
+                            )}
+                        </Link>
                     </div>
                 </div>
             </div>

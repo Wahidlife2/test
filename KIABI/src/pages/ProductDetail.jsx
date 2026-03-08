@@ -19,6 +19,49 @@ const ProductDetail = () => {
 
     if (!product) return <div className="container" style={{ padding: '100px 0', textAlign: 'center' }}>Produit non trouvé</div>;
 
+    const getColorName = (hex) => {
+        const colors = {
+            '#000000': 'Noir',
+            '#333333': 'Gris Foncé',
+            '#555555': 'Gris',
+            '#FFFFFF': 'Blanc',
+            '#FFC0CB': 'Rose',
+            '#ADD8E6': 'Bleu Ciel',
+            '#00008B': 'Bleu Marine',
+            '#FFB6C1': 'Rose Clair',
+            '#E0FFFF': 'Bleu Givré',
+            '#4682B4': 'Bleu Acier',
+            '#F5F5F5': 'Blanc Cassé',
+            '#8FBC8F': 'Vert Amande',
+            '#121F4B': 'Bleu Kiabi',
+            '#808080': 'Gris',
+            '#D3D3D3': 'Gris Perle',
+            '#B22222': 'Rouge',
+            '#F5DEB3': 'Beige',
+            '#556B2F': 'Kaki',
+            '#000080': 'Marine',
+            '#FFD700': 'Jaune',
+            '#00BFFF': 'Bleu Cyan',
+            '#E6E6FA': 'Lavande',
+            '#F08080': 'Corail',
+            '#C0C0C0': 'Argent',
+            '#FF69B4': 'Rose Flash',
+            '#2E8B57': 'Vert Sapin',
+            '#B0C4DE': 'Bleu Pastel',
+            '#DCDCDC': 'Gris Très Clair',
+            '#FFE4E1': 'Rose Poudré',
+            '#DEB887': 'Camel',
+            '#708090': 'Ardoise',
+            '#2F4F4F': 'Gris Anthracite',
+            '#BC8F8F': 'Vieux Rose',
+            '#800000': 'Bordeaux',
+            '#006400': 'Vert Foncé',
+            '#BDB76B': 'Kaki Sombre',
+            '#F0FFF0': 'Menthe',
+        };
+        return colors[hex?.toUpperCase()] || hex;
+    };
+
     const handleAddToCart = () => {
         if (!selectedSize) {
             setShowError(true);
@@ -82,7 +125,7 @@ const ProductDetail = () => {
 
                             {/* Color Selector */}
                             <div className="selector-section">
-                                <label className="selector-label">Couleur : <strong>{selectedColor}</strong></label>
+                                <label className="selector-label">Couleur : <strong>{getColorName(selectedColor)}</strong></label>
                                 <div className="color-grid">
                                     {product.colors.map((color, idx) => (
                                         <button

@@ -8,9 +8,9 @@ export const hotels = [
         rating: 8.9,
         reviews: 452,
         images: [
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/346851214.jpg?k=12369680a6b7235b2447915591fc0d453f6ed91745778832a8de699bf78021f1&o=&hp=1',
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/346851221.jpg?k=e1c7504a58b87f95022e399478f654b413998b58495a896d85a065840d21e843&o=&hp=1',
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/346851212.jpg?k=1c69894e3390f77239326e13b8656641b4e292024dbdb51167440333d455d3cf&o=&hp=1'
+            'https://images.unsplash.com/photo-1551882547-ff43c63faf76?q=80&w=1024&auto=format&fit=crop',
+            'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1024&auto=format&fit=crop',
+            'https://images.unsplash.com/photo-1582719478250-c89cae4df85b?q=80&w=1024&auto=format&fit=crop'
         ],
         description: 'Bénéficiant d\'un emplacement exceptionnel dans le centre d\'Istanbul, le Chido Residence propose une connexion Wi-Fi gratuite dans l\'ensemble de ses locaux et une terrasse. Cet hôtel 3 étoiles possède un bureau d\'excursions et une bagagerie.',
         pricePerNight: 85,
@@ -30,7 +30,8 @@ export const hotels = [
         rating: 9.8,
         reviews: 1240,
         images: [
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/159265882.jpg?k=7f8841484b39745967ee355554fc73d6e5399580436cf9797d848135832a9dfb&o=&hp=1'
+            'https://images.unsplash.com/photo-1541973354762-1144f74902b9?q=80&w=1024&auto=format&fit=crop',
+            'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=1024&auto=format&fit=crop'
         ],
         description: 'Le Ritz Paris propose une terrasse ainsi qu\'un spa et centre de bien-être doté d\'une piscine, d\'un sauna et d\'installations de massage.',
         pricePerNight: 1200,
@@ -48,7 +49,8 @@ export const hotels = [
         rating: 9.2,
         reviews: 25400,
         images: [
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/330598163.jpg?k=5d9435f532b2609090b83ef3b88d2d66574a4417189c42a22534570fd74b7911&o=&hp=1'
+            'https://images.unsplash.com/photo-1527661591475-527312dd65f5?q=80&w=1024&auto=format&fit=crop',
+            'https://images.unsplash.com/photo-1551101918-243224b78832?q=80&w=1024&auto=format&fit=crop'
         ],
         description: 'Surplombant la baie, l\'emblématique Marina Bay Sands propose la plus grande piscine à débordement sur le toit au monde.',
         pricePerNight: 650,
@@ -66,7 +68,8 @@ export const hotels = [
         rating: 9.5,
         reviews: 3200,
         images: [
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/182659345.jpg?k=346df2204c3298a85e49c719545041933c042e617d590117b354eebf899e744f&o=&hp=1'
+            'https://images.unsplash.com/photo-1518684079-3c830dcef090?q=80&w=1024&auto=format&fit=crop',
+            'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1024&auto=format&fit=crop'
         ],
         description: 'Situé sur sa propre île, le Burj Al Arab Jumeirah propose des suites ultra-luxueuses avec vue sur la mer.',
         pricePerNight: 1500,
@@ -84,7 +87,8 @@ export const hotels = [
         rating: 8.8,
         reviews: 15800,
         images: [
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/155700772.jpg?k=42f4c478647acae3ca4b4d75d5062c3e10bd71d3a49257bb5774a216fc624c88&o=&hp=1'
+            'https://images.unsplash.com/photo-1582650625119-3a31f8fa2699?q=80&w=1024&auto=format&fit=crop',
+            'https://images.unsplash.com/photo-1550616149-ea271705669f?q=80&w=1024&auto=format&fit=crop'
         ],
         description: 'Situé derrière les célèbres fontaines du Bellagio, cet hôtel de luxe propose plusieurs options de restauration et des chambres élégantes.',
         pricePerNight: 280,
@@ -102,7 +106,8 @@ export const hotels = [
         rating: 9.4,
         reviews: 2100,
         images: [
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/29969634.jpg?k=bb83c4b574a4417189c42a22534570fd74b7911&o=&hp=1'
+            'https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1024&auto=format&fit=crop',
+            'https://images.unsplash.com/photo-1514330965385-bd0042e617d5?q=80&w=1024&auto=format&fit=crop'
         ],
         description: 'Ouvert en 1889, le célèbre Savoy se trouve sur les rives de la Tamise, à moins de 5 minutes à pied du British Museum.',
         pricePerNight: 700,
@@ -120,7 +125,8 @@ export const hotels = [
         rating: 8.4,
         reviews: 5400,
         images: [
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/22338006.jpg?k=7f8841484b39745967ee355554fc73d6e5399580436cf9797d848135832a9dfb&o=&hp=1'
+            'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=1024&auto=format&fit=crop',
+            'https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=1024&auto=format&fit=crop'
         ],
         description: 'Le Fletcher Hotel Amsterdam est un hôtel au design futuriste situé à la jonction des autoroutes A2 et A9.',
         pricePerNight: 120,
@@ -138,7 +144,8 @@ export const hotels = [
         rating: 9.6,
         reviews: 1800,
         images: [
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/44372577.jpg?k=12369680a6b7235b2447915591fc0d453f6ed91745778832a8de699bf78021f1&o=&hp=1'
+            'https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1024&auto=format&fit=crop',
+            'https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1024&auto=format&fit=crop'
         ],
         description: 'Surplombant le palais impérial, le Shangri-La Tokyo se trouve juste à côté de la gare de Tokyo.',
         pricePerNight: 900,
@@ -156,7 +163,8 @@ export const hotels = [
         rating: 9.4,
         reviews: 2800,
         images: [
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/155700772.jpg?k=42f4c478647acae3ca4b4d75d5062c3e10bd71d3a49257bb5774a216fc624c88&o=&hp=1'
+            'https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?q=80&w=1024&auto=format&fit=crop',
+            'https://images.unsplash.com/photo-1563911302283-d2bc129e7570?q=80&w=1024&auto=format&fit=crop'
         ],
         description: 'L\'élégant Belmond Copacabana Palace est un hôtel 5 étoiles situé face à la plage de Copacabana.',
         pricePerNight: 450,
@@ -174,7 +182,8 @@ export const hotels = [
         rating: 9.7,
         reviews: 1500,
         images: [
-            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/22338006.jpg?k=7f8841484b39745967ee355554fc73d6e5399580436cf9797d848135832a9dfb&o=&hp=1'
+            'https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?q=80&w=1024&auto=format&fit=crop',
+            'https://images.unsplash.com/photo-1547448415-e9f5b28e570d?q=80&w=1024&auto=format&fit=crop'
         ],
         description: 'Considéré comme l\'un des plus beaux hôtels du monde, La Mamounia offre une expérience sensorielle unique au cœur de Marrakech.',
         pricePerNight: 800,

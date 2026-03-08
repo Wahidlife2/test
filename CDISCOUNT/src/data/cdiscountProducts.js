@@ -78,6 +78,43 @@ export const cdiscountProducts = [
     ...Array.from({ length: 92 }, (_, i) => {
         const categories = ["Informatique", "Electroménager", "Maison", "TV Son", "Jardin", "Brico"];
         const cats = categories[i % categories.length];
+
+        const imageData = {
+            "Informatique": [
+                "photo-1517336710211-19e99ee70215",
+                "photo-1610945265064-0e34e5519bbf",
+                "photo-1511707171634-5f897ff02aa9"
+            ],
+            "Electroménager": [
+                "photo-1626806787461-102c1bfaaea1",
+                "photo-1571175432270-e837c8033a5d",
+                "photo-1559056199-641a0ac8b55e"
+            ],
+            "Maison": [
+                "photo-1524758631624-e2822e304c36",
+                "photo-1556228453-efd6c1ff04f6",
+                "photo-1513161455079-7dc1de15ef3e"
+            ],
+            "TV Son": [
+                "photo-1593784991095-a205029471b6",
+                "photo-1545454675-3531b543be5d",
+                "photo-1590658268037-6bf12165a8df"
+            ],
+            "Jardin": [
+                "photo-1622383529357-37421dad2445",
+                "photo-1611843467160-25af18fe1270",
+                "photo-1585128719269-89a315b497bc"
+            ],
+            "Brico": [
+                "photo-1581244276891-663f82ed8b1c",
+                "photo-1504148455328-c3769073392c",
+                "photo-1621905251918-48416bd8575a"
+            ]
+        };
+
+        const ids = imageData[cats] || ["photo-1523275339b4f-a296d933e1d6"];
+        const photoId = ids[i % ids.length];
+
         return {
             id: i + 12,
             name: `Produit Premium ${cats} Edition ${i + 12}`,
@@ -86,11 +123,11 @@ export const cdiscountProducts = [
             oldPrice: Math.floor(Math.random() * 300) + 850,
             category: cats,
             subCategory: "Articles divers",
-            image: `https://picsum.photos/seed/cdis${i + 50}/800/800`,
+            image: `https://images.unsplash.com/${photoId}?q=80&w=800&auto=format&fit=crop`,
             rating: (Math.random() * (5 - 3.5) + 3.5).toFixed(1),
             reviews: Math.floor(Math.random() * 2000),
             isCDiscountAVolonte: i % 2 === 0,
-            description: "Un produit de haute qualité sélectionné par nos experts Cdiscount.",
+            description: `Un produit de haute qualité de la gamme ${cats} sélectionné par nos experts Cdiscount.`,
             source: "Vendu et expédié par Cdiscount"
         };
     })

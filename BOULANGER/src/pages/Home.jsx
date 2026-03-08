@@ -2,8 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { boulangerProducts } from '../data/boulangerProducts';
 import { Truck, Store, ShieldCheck } from 'lucide-react';
+import { useCart } from '../context/CartContext';
 
 const Home = () => {
+    const { addToCart } = useCart();
+
     return (
         <div className="home-page container">
             <section className="hero-section mt-20">
@@ -44,20 +47,22 @@ const Home = () => {
                 <h2 className="section-title">Notre sélection pour vous</h2>
                 <div className="product-grid">
                     {boulangerProducts.map(p => (
-                        <Link to="#" key={p.id} className="bl-product-card">
-                            <div className="card-image">
+                        <div key={p.id} className="bl-product-card">
+                            <Link to={`/product/${p.id}`} className="card-image">
                                 <img src={p.image} alt={p.name} />
-                            </div>
+                            </Link>
                             <div className="card-body">
                                 <p className="brand">{p.brand}</p>
-                                <h3 className="name">{p.name}</h3>
+                                <Link to={`/product/${p.id}`}>
+                                    <h3 className="name">{p.name}</h3>
+                                </Link>
                                 <div className="price-row flex align-center justify-between">
                                     <span className="price">{p.price.toFixed(2)}€</span>
                                     {p.oldPrice && <span className="old-price">{p.oldPrice.toFixed(2)}€</span>}
                                 </div>
-                                <button className="add-btn">Ajouter au panier</button>
+                                <button className="add-btn" onClick={() => addToCart(p)}>Ajouter au panier</button>
                             </div>
-                        </Link>
+                        </div>
                     ))}
                 </div>
             </section>

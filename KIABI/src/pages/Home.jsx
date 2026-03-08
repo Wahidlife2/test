@@ -25,15 +25,17 @@ const Home = () => {
       <section className="quick-categories container">
         <div className="categories-slider">
           {[
-            { name: 'Femme', color: '#f8f8f8' },
-            { name: 'Homme', color: '#f8f8f8' },
-            { name: 'Fille', color: '#f8f8f8' },
-            { name: 'Garçon', color: '#f8f8f8' },
-            { name: 'Bébé', color: '#f8f8f8' },
-            { name: 'Maison', color: '#f8f8f8' }
+            { name: 'Femme', image: 'https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?q=80&w=200&auto=format&fit=crop' },
+            { name: 'Homme', image: 'https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?q=80&w=200&auto=format&fit=crop' },
+            { name: 'Fille', image: 'https://images.unsplash.com/photo-1542044896530-05d85be9b11a?q=80&w=200&auto=format&fit=crop' },
+            { name: 'Garçon', image: 'https://images.unsplash.com/photo-1519234110480-2582057b568e?q=80&w=200&auto=format&fit=crop' },
+            { name: 'Bébé', image: 'https://images.unsplash.com/photo-1515488764276-beab7607c1e6?q=80&w=200&auto=format&fit=crop' },
+            { name: 'Maison', image: 'https://images.unsplash.com/photo-1629198688000-71f23e745b6e?q=80&w=200&auto=format&fit=crop' }
           ].map(cat => (
             <Link to={`/category/${cat.name}`} key={cat.name} className="cat-item">
-              <div className="cat-placeholder" style={{ backgroundColor: cat.color }}></div>
+              <div className="cat-img-wrapper" style={{ backgroundColor: '#f8f8f8' }}>
+                <img src={cat.image} alt={cat.name} />
+              </div>
               <span>{cat.name}</span>
             </Link>
           ))}
