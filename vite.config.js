@@ -15,6 +15,8 @@ export default defineConfig({
         boulanger: resolve(__dirname, 'BOULANGER/index.html'),
         lahalle: resolve(__dirname, 'LA_HALLE/index.html'),
         booking: resolve(__dirname, 'BOOKING/index.html'),
+        coquesdeluxe: resolve(__dirname, 'COQUESDELUXE/index.html'),
+        sephora: resolve(__dirname, 'SEPHORA/index.html'),
       },
     },
   },
